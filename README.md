@@ -1,10 +1,10 @@
-<h2 align="center">![Warthunder Bot Logo](https://static.warthunder.com/i/modern/logo-short.png?1g)</h2>
+![Warthunder Bot Logo](https://static.warthunder.com/i/modern/logo-short.png?1g)
 
 <h2 align="center">A Warthunder Devblog Discord bot</h2>
 
 ## Overview
 
-This bot gives you news updates whenever the devs post blogs from [their dev blog](https://warthunder.com/en/news/?tags=Development)
+This bot gives you news updates whenever the devs post blogs from [here](https://warthunder.com/en/news/?tags=Development)
 
 ## Installation and Usage
 
@@ -12,18 +12,18 @@ This bot gives you news updates whenever the devs post blogs from [their dev blo
 
 You will need the following:
 
-[node.js](https://nodejs.org/en/download/) | [a Discord token](https://discordapp.com/developers/applications)
+## **[node.js](https://nodejs.org/en/download/)** | **[a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)**
 
 
--Get **[node.js](https://nodejs.org/en/download/)**;
--Get a Discord token, place it in a _.env_ file an example is provided, you just have to remove the ```.example``` after it;
--Clone or download the file from Github;
--Unzip it;
--install everything with ```npm i```
+- Get **[node.js](https://nodejs.org/en/download/)**;
+- Get a Discord token, place it in a _.env_ file. An example is provided, you just have to remove the ```.example``` after it;
+- Clone or download the file from Github;
+- Unzip it;
+- install everything with ```npm i``` in the unziped directory
 
 You have yourself a bot! 
 
-You can run it if you are in the unziped directory. Type ```node index.js``` in your terminal
+You can run by, still in the unziped directory, typing ```node index.js``` in your terminal
 
 ### Usage
 
@@ -43,10 +43,10 @@ The enviremental variables can be easily changed in ```.env```
 
 
 ```js
-discord_token=YOUR_TOKAN_HERE
-timeUnit=s
+discord_token=YOUR_TOKEN_HERE   #This is the token the bot will be using to log in to the bot Client
+timeUnit=s                      #May be ms | s | m | h | d
 timeAmount=60
-invoker=!wt
+invoker=!wt                     #In other word >PREFIX
 ```
 
 's' is the time unit, can be 'ms' as in millisecond, 's' as in second, 'm' for minutes, and 'h' for hours.
