@@ -2,8 +2,8 @@ const getNews = require('./getnewposts');
 const fs = require('fs');
 const Discord = require('discord.js');
 
-try { args = fs.readFileSync('args', 'utf8' ) 
-    if (args == ('-v' || '--verbose')) {
+try { args = fs.readFileSync('.args', 'utf8' ) 
+    if (args == '-v') {
         verbose = true
     }
 } catch { args = false }

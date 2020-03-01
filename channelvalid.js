@@ -1,3 +1,10 @@
+const fs = require('fs');
+try { args = fs.readFileSync('.args', 'utf8' ) 
+    if (args == '-v') {
+        verbose = true
+    }
+} catch { args = false }
+
 function channelvalid (message, channel) { try {
     /*  Checks for the validity of the channel sent in
         where `message` is the message sent by the user
@@ -17,6 +24,7 @@ function channelvalid (message, channel) { try {
         })
         
     })
+    verbose ? console.log( Date() + ( valid[0] ? ' Found valid channel' + valid : ' No valid channels found'  )) : ''
     return valid
     } catch (e) {return false;}
 }

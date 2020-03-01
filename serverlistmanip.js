@@ -1,6 +1,6 @@
 const fs = require('fs');
-try { args = fs.readFileSync('args', 'utf8' ) 
-    if (args == ('-v' || '--verbose')) {
+try { args = fs.readFileSync('.args', 'utf8' ) 
+    if (args == '-v') {
         verbose = true
     }
 } catch { args = false }

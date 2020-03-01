@@ -27,8 +27,8 @@ const bot = new Discord.Client();
 
 if (verbose) { 
     console.log( Date() + ' Starting in verbose mode' ) 
-    fs.writeFileSync('args', '-v')
-} else { fs.writeFileSync('args', '') }
+    fs.writeFileSync('.args', '-v')
+} else { fs.writeFileSync('.args', '') }
 
 verbose ? console.log( Date() + ' Checking for news every ' + process.env.timeAmount + process.env.timeUnit ) : ''
 timer.addEvent(process.env.timeUnit, process.env.timeAmount, 'checkfornewpost');    //setting up the timer, this can easily be something else ex. ('m', 30, 'checkfornewpost') where 'm' can be ms (millisecond) s (second), m (minute), h (hour), d (day)
